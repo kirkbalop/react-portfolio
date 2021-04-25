@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import About from './components/About';
-import Nav from './components/Nav';
+import Header from './components/Header';
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
     <div>
-      <Nav></Nav>
+      <Header></Header>
       <main>
+        <Portfolio></Portfolio>
         <About></About>
       </main>
     </div>
