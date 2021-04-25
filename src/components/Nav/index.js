@@ -1,42 +1,22 @@
 import React from 'react';
 
-function Nav() {
-    const categories = [
-        {
-            name: 'About',
-            description: '',
-        },
-        {
-            name: 'Portfolio',
-            description: '',
-        },
-        {
-            name: 'Contact',
-            description: '',
-        },
-        {
-            name: 'Resume',
-            description: ''
-        }
-    ]
-
-    function categorySelected(name) {
-        console.log(`${name} clicked`)
-    }
-
+function Nav(props) {
+    const { currentTab, setCurrentTab } = props;
     return(
         <nav>
-            <ul className="flex-row">
-                {categories.map((category) => (
-                    <li
-                    className="mx-1"
-                    key={category.name}
-                    >
-                    <span onClick={() => categorySelected(category.name)}>
-                        {category.name}
-                    </span>
-                    </li>
-                ))}
+            <ul className="flex-row mobile-view">
+                <li className={currentTab === 'about' ? 'mx-2 navActive' : 'mx-2'}>
+                    <span onClick={() => setCurrentTab("about")}>About Me</span>
+                </li>
+                <li className={currentTab === 'contact' ? 'mx-2 navActive' : 'mx-2'}>
+                <span onClick={() => setCurrentTab("portfolio")}>Portfolio</span>
+                </li>
+                <li className={currentTab === 'portfolio' ? 'mx-2 navActive' : 'mx-2'}>
+                <span onClick={() => setCurrentTab("resume")}>Resume</span>
+                </li>
+                <li className={currentTab === 'resume' ? 'mx-2 navActive' : 'mx-2'}>
+                    <span onClick={() => setCurrentTab("contact")}>Contact</span>
+                </li>
             </ul>
         </nav>
     );

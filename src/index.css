@@ -5,11 +5,11 @@ main {
 }
 
 :root {
-	--primary: #499167;
-	--secondary: #2E282A;
-	--tertiary: #f0f2a6;
-	--quaternary: #39a9db;
-	--quinary: #bfd7ea;
+	--primary: #353535;
+	--secondary: #284b63;
+	--tertiary: #ffffff;
+	--quaternary: #d9d9d9;
+	--quinary: #84a59d;
 	--light: #bfd7ea;
 	--dark: #353831;
 	--darker: #39a9db;
