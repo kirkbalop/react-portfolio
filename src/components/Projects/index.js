@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 function Project(props) {
 
-	const {name, description, technologies, github, deployed} = props.project;
+	const {name, description, image, technologies, github, deployed} = props.project;
 
 
     // This function parses the information from the array and creates a list.
@@ -22,11 +22,11 @@ function Project(props) {
     }
     return(
         <Card style={{ width: "18rem" }}>
-			{/* <Card.Img
+			<Card.Img
 				variant="top"
-				src={require(`../../assets/images/${image}`)}
+				src={process.env.PUBLIC_URL + `/assets/images/${image}`}
 				className="card-image"
-			/> */}
+			/>
 			<div className="center">
 				<Card.Body>
 					<Card.Title className="card-title">{name}</Card.Title>

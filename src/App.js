@@ -3,6 +3,9 @@ import './App.css';
 import About from './components/About';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
+import Footer from './components/Footer'
 
 function App() {
   const [currentTab, setCurrentTab] = useState('about');
@@ -14,10 +17,10 @@ function App() {
         return <About />;
       case 'portfolio':
         return <Portfolio />
-      // case 'resume':
-      //   return <Resume />
-      // case 'contact':
-      //   return <Contact />
+      case 'resume':
+        return <Resume />
+      case 'contact':
+        return <Contact />
       default:
         return <About />
     }
@@ -32,7 +35,7 @@ function App() {
 				<main>{renderTab()}</main>
 			</div>
 			<div>
-				{/* <Footer></Footer> */}
+				<Footer></Footer>
 			</div>
 		</div>
 	);

@@ -6,7 +6,7 @@ function Portfolio() {
         {
             name: 'Budget Tracker',
             description: 'A Progressive Web Application used to manage budgets using a NoSQL database and offline persistence for consistently great user experience.',
-            // image
+            image: 'BudgetTracker.png',
             technologies: [
                 'JavaScript',
                 'MongoDB',
@@ -21,7 +21,7 @@ function Portfolio() {
             name: 'Wikipleiades',
             description:
                 'An online, crowdsourced database of celestial bodies and objects for those interested in exploring beyond the scope of our world.',
-            // image
+            image: 'Wikipleiades.png',
             technologies: [
                 'HTML/CSS',
                 'JavaScript',
@@ -36,7 +36,7 @@ function Portfolio() {
         {
             name: 'Work Day Scheduler',
             description: 'A daily planner set to hourly intervals with color-coding denoting past, present, and future tasks for optimal organization.',
-            // image
+            image: 'WorkdayScheduler.png',
             technologies: [
                 'HTML/CSS',
                 'JavaScript',
@@ -49,13 +49,35 @@ function Portfolio() {
         {
             name: 'Password Generator',
             description: 'This application generates a password between 8 and 128 characters based on user-selected criteria.',
-            // image
+            image: 'passwordGen.png',
             technologies: [
                 'HTML/CSS',
                 'JavaScript'
             ],
             github: 'https://github.com/kirkbalop/password-gen',
-            deployed: 'https://kirkbalop.github.io/password-ge/'
+            deployed: 'https://kirkbalop.github.io/password-gen'
+        },
+        {
+            name: 'Food Festival',
+            description: 'A Progressive Web Application for potential attendees of a regional food fest including ticketing and schedule.',
+            image: 'FoodFest.png',
+            technologies: [
+                'HTML/CSS',
+                'JavaSctipt',
+                'WebPack'
+            ],
+            github: 'https://github.com/kirkbalop/food-festival',
+            deployed:'https://kirkbalop.github.io/food-festival/'
+        },
+        {
+            name: 'Run Buddy',
+            description: 'A webpage advertising a company devoted to helping people exercise and get in shape.',
+            image: 'RunBuddy.png',
+            technologies: [
+                'HTML/CSS',
+            ],
+            github: 'https://github.com/kirkbalop/run-buddy',
+            deployed: 'https://kirkbalop.github.io/run-buddy'
         }
     ]
     return (
@@ -80,14 +102,14 @@ function Portfolio() {
 						<Project project={projects[3]}></Project>
 					</li>
 				</ul>
-				{/* <ul className="flex-row mobile-row">
+				<ul className="flex-row mobile-row">
 					<li className="padding">
 						<Project project={projects[4]}></Project>
 					</li>
 					<li className="padding">
 						<Project project={projects[5]}></Project>
 					</li>
-				</ul> */}
+				</ul>
 			</div> 
 		</section>
 	);
