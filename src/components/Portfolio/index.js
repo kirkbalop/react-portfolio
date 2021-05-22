@@ -21,7 +21,7 @@ function Portfolio() {
             name: 'Wikipleiades',
             description:
                 'An online, crowdsourced database of celestial bodies and objects for those interested in exploring beyond the scope of our world.',
-            image: 'Wikipleiades.png',
+            image: 'WikiPleiades.png',
             technologies: [
                 'HTML/CSS',
                 'JavaScript',
@@ -49,7 +49,7 @@ function Portfolio() {
         {
             name: 'Password Generator',
             description: 'This application generates a password between 8 and 128 characters based on user-selected criteria.',
-            image: 'passwordGen.png',
+            image: 'PasswordGen.png',
             technologies: [
                 'HTML/CSS',
                 'JavaScript'
