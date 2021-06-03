@@ -14,6 +14,7 @@ function About() {
         I pride myself in identifying and finding solutions to problems through
         independent research whenever possible.
         <br></br>
+        <br></br>
         In addition to my technical skillset, my 15+ years of working with the
         public in both a customer service setting as well as in their homes has
         allowed me to finely hone my communication skills both with customers
